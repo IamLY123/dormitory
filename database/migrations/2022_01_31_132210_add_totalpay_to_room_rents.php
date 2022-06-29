@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AddTotalpayToRoomRents extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('room_rent', function (Blueprint $table) {
+            //
+            // $table->integer('totalpay')->nullable();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        
+        // Schema::table('room_rent', function (Blueprint $table) {
+        //     //
+        //     $table->dropColumn('totalpay');
+        //     $table->dropColumn('pay_first');
+        // });
+    }
+}
